@@ -1,54 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora Actual</title>
-    <style>
-        body {
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            height: 95vh;
-            width: 100wh;
-            text-align: center;
-            background-color: black;
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-       
-       
-        #hora {
-            position: relative;
-            font-size: 20vw;
-            color: #ffffff;
-            text-shadow: 10px 10px 10px blue;
-        }
+    <!--:: link:: -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <!--:: script:: -->
+    <script src="./asset/js/script.js"></script>
 
 
+    <title>Hora actual local</title>
 
-    </style>
 </head>
+
 <body>
-    
+
     <div id="hora"> </div>
 
-    <script>
-        function mostrarHora() {
-            const ahora = new Date();
-            const horas = ahora.getHours().toString().padStart(2, '0');
-            const minutos = ahora.getMinutes().toString().padStart(2, '0');
-            const segundos = ahora.getSeconds().toString().padStart(2, '0');
-            document.getElementById('hora').textContent = `${horas}:${minutos}:${segundos}`;
-        }
 
-     
-
-        // Actualiza la hora cada segundo
-        setInterval(mostrarHora, 1000);
-
-        // Muestra la hora inmediatamente al cargar la página
-        mostrarHora();
-    </script>
 </body>
+
 </html>
