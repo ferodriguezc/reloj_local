@@ -19,7 +19,8 @@ function actualizarCronometro() {
         horas++
         minutos = 0;
     }
-
+   
+    
 
     const horasFormateadas = String(horas).padStart(2, '0');
     const minutosFormateados = String(minutos).padStart(2, '0');
